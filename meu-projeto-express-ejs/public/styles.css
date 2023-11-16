@@ -1,5 +1,5 @@
 body{
-    background-color: hwb(342 85% 0%);
+    background-color: hwb(342 95% 0%);
 }
 
 
@@ -11,6 +11,9 @@ img{
 
 .flex-conteiner{
     display: inline-block;
-    justify-content: center;
+    align-items: center;
 }
 
+p, h3, h5{
+    
+}
