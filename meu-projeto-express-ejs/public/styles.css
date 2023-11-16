@@ -1,0 +1,11 @@
+img{
+    height: 400px;
+    width: 400px;
+
+}
+
+.flex-conteiner{
+    display: inline-block;
+    justify-content: center;
+}
+

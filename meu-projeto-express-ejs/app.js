@@ -5,16 +5,12 @@ const port = 3000;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-app.get('/produtinho', (req, res) => {
-  res.render('produtinho', { message: 'Deseja esse produtinho?' });
-});
-
 app.get('/produto', (req, res) => {
-  res.render('produto', { message: 'Bem vindo a pagina produtos!' });
+  res.render('produto', { message: 'Você quer esse produtinho?!' });
 });
 
 app.get('/', (req, res) => {
-  res.render('index', { message: 'Olá, Mundo!' });
+  res.render('index', { message: 'Você está na pagina produtos!' });
 });
 
 app.listen(port, () => {
