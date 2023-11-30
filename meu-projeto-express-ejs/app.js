@@ -27,6 +27,11 @@ app.get('/produto', (req, res) => {
   res.render('produto', {message: 'Você está na pagina produtos!' });
 });
 
+app.get('/produto/:id', (req, res) => {
+  const produtoEspecifico = buscarProdutosID(req.params.id);
+  res.render('produto', {produtoEspecifico});
+});
+
 app.get('/', (req, res) => {
   res.render('index', {produtos});
 });

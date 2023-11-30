@@ -6,16 +6,11 @@
 </head>
 
 <body>
-
-  <h1><%= message %></h1>
-  
-  <div class="flex-conteiner">
-    <img src="https://www.sephora.com.br/dw/image/v2/BFJC_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/pt_BR/dw139a51a1/images/Color%20BR/KYLIE/blush/99350103304_KJC_BLUSH_21_Pink_Power_334_10g_0.35oz_Open_1500px.jpg?sw=556&sh=680&sm=fit" class="card-img-top" alt="..." >
-
-        <p>Kylie Cosmetics</p>
-        <p>Blush compacto Kylie Janner</p>
-        <p>R$ 169,00 </br> OU 8X DE R$ 21,13</p>
-        <p><strong>Cor:</strong> Witer Pink</p>
+  <div class="flex-conteiner">    
+    <img src="<%= produtoEspecifico.imagem %>">
+    <h2><%= produtoEspecifico.nome %></h2>
+    <p><%= produtoEspecifico.descricao %></p>
+    <h2><%= produtoEspecifico.preco %></h2>
   </div>    
     
 

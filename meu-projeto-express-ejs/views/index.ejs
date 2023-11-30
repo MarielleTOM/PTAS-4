@@ -10,12 +10,14 @@
     <% for (let produto of produtos){%>
 
  <div class="flex-conteiner">
-        <a href="/produto/">
+        <a href="/produto/<%= produto.id %>">
         <img src="<%= produto.imagem%>">
+      </a>
             <h2><%= produto.nome %></h2>
             <p><%= produto.descricao %></p>
             <h2><%= produto.preco %></h2>
-        </a>
+            
+        
       </div>    
  
       <% } %>
